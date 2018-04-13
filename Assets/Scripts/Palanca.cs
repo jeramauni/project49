@@ -6,8 +6,7 @@ public class Palanca : MonoBehaviour
 {
 	private Animator anim;
 
-	[SerializeField]
-	private bool oN;
+	public bool oN;
 
 	[SerializeField]
 	private GameObject ascensor1;
