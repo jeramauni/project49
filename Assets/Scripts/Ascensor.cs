@@ -8,7 +8,7 @@ public class Ascensor : MonoBehaviour {
 	public float speed;
 	private float speedG;
 	public GameObject activador;
-	private Palanca2 estado;
+	private Palanca estado;
 	private Detección colisionIni, colisionFin;
 	public GameObject ini, fin;
 	private bool continuidad = true;
@@ -23,7 +23,7 @@ public class Ascensor : MonoBehaviour {
 	void Start () 
 	{
 		ascen = GetComponent<Rigidbody2D> ();
-		estado = activador.GetComponent<Palanca2> ();
+		estado = activador.GetComponent<Palanca> ();
 		colisionIni = ini.GetComponent<Detección> ();
 		colisionFin = fin.GetComponent<Detección> ();
 		speedG = speed;
@@ -32,10 +32,7 @@ public class Ascensor : MonoBehaviour {
 
 	void Update () 
 	{
-		if(Input.GetKeyDown(KeyCode.X))
-		{
-			estado.oN = !estado.oN;
-		}
+
 		if (tipo == true) {
 			if (estado.oN == false) {
 				if (colisionFin.dentro == false) {

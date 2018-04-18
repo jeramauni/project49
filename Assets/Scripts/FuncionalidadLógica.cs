@@ -5,9 +5,10 @@ using UnityEngine;
 public class FuncionalidadLógica : MonoBehaviour 
 {
 	private bool enRangoPalanca;
-	private GameObject pal;
+    private GameObject pal;
 
-	void Start ()
+
+    void Start ()
 	{
 		enRangoPalanca = false;
 	}
@@ -17,7 +18,8 @@ public class FuncionalidadLógica : MonoBehaviour
 		//Palancas
 		if (Input.GetKeyDown (KeyCode.X) && enRangoPalanca) 
 		{
-			//pal.GetComponent<Palanca> ().UtilizaPalanca ();
+            Debug.Log("Click");
+            pal.GetComponent<Palanca>().Trigger();
 		}
 	}
 
