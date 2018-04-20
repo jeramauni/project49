@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 15823443}
   - component: {fileID: 15823447}
   - component: {fileID: 15823445}
+  - component: {fileID: 15823446}
   m_Layer: 0
   m_Name: Machango
   m_TagString: Untagged
@@ -228,6 +229,18 @@ MonoBehaviour:
   izq: {fileID: 1777211864}
   der: {fileID: 801932676}
   sue: {fileID: 1251254929}
+--- !u!114 &15823446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15823441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fd945e45cf0c443b7c732787b27aa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ctrl: {fileID: 889834180}
 --- !u!68 &15823447
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -852,11 +865,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: 8.38
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.49
+      value: -6.4
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -887,6 +900,16 @@ Prefab:
       propertyPath: gm
       value: 
       objectReference: {fileID: 889834180}
+    - target: {fileID: 61059736070070704, guid: 387458562a6ecc24cb09af6c838170b1,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 61059736070070704, guid: 387458562a6ecc24cb09af6c838170b1,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 10.76
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
   m_IsPrefabParent: 0
@@ -1344,6 +1367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fd945e45cf0c443b7c732787b27aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ctrl: {fileID: 889834180}
 --- !u!50 &651612759
 Rigidbody2D:
   serializedVersion: 4
@@ -2420,7 +2444,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013898029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6, y: -1.6, z: 0}
+  m_LocalPosition: {x: -191.8, y: 1, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1394883203}
@@ -2438,7 +2462,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.7
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}

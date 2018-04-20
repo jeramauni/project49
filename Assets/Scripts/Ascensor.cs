@@ -5,8 +5,7 @@ using UnityEngine;
 public class Ascensor : MonoBehaviour {
 
 	Rigidbody2D ascen;
-	public float speed;
-	private float speedG;
+    public float speed;
 	public GameObject activador;
 	private Palanca estado;
 	private Detección colisionIni, colisionFin;
@@ -26,7 +25,6 @@ public class Ascensor : MonoBehaviour {
 		estado = activador.GetComponent<Palanca> ();
 		colisionIni = ini.GetComponent<Detección> ();
 		colisionFin = fin.GetComponent<Detección> ();
-		speedG = speed;
 	}
 	
 

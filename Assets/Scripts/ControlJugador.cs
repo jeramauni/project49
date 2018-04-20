@@ -7,7 +7,7 @@ public class ControlJugador : MonoBehaviour{
 	private Detección colisionI, colisionD, colisionS;
 	public float alturaSalto, velMovimiento;
 	public GameObject izq, der, sue;
-	Rigidbody2D rb;
+    Rigidbody2D rb;
 
 	void Awake()
 	{
@@ -31,12 +31,17 @@ public class ControlJugador : MonoBehaviour{
 		if(((Input.GetKey(KeyCode.RightArrow)) && colisionD.dentro == false) || ((Input.GetKey(KeyCode.RightArrow)) && colisionS.dentro == true))
 		{
 			rb.velocity = new Vector2 (velMovimiento, rb.velocity.y);
-		}
+
+                gameObject.transform.localScale = new Vector3 (1f, 1f, 1f);    //Volteo del personaje
+
+        }
 
 		//Mover a la izquierda ("Flecha izquierda")
 		if(((Input.GetKey(KeyCode.LeftArrow)) && colisionI.dentro == false) ||((Input.GetKey(KeyCode.LeftArrow)) && colisionS.dentro == true))
 		{
 			rb.velocity = new Vector2 (- velMovimiento, rb.velocity.y);
-		}
+
+                gameObject.transform.localScale = new Vector3(-1f, 1f, 1f);  //Volteo del personaje
+        }
 	}
 }

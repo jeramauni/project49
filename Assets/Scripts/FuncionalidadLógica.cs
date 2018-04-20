@@ -6,7 +6,7 @@ public class FuncionalidadLógica : MonoBehaviour
 {
 	private bool enRangoPalanca;
     private GameObject pal;
-
+    public GameManager ctrl;
 
     void Start ()
 	{
@@ -21,7 +21,13 @@ public class FuncionalidadLógica : MonoBehaviour
             Debug.Log("Click");
             pal.GetComponent<Palanca>().Trigger();
 		}
-	}
+
+        //Caja madera (Machango)
+        if (Input.GetKeyDown(KeyCode.X) && !ctrl.personaje)
+        {
+            
+        }
+    }
 
 	void OnTriggerEnter2D (Collider2D coll)
 	{
