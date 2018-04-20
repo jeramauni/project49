@@ -32,7 +32,7 @@ public class ControlJugador : MonoBehaviour{
 		{
 			rb.velocity = new Vector2 (velMovimiento, rb.velocity.y);
 
-                gameObject.transform.localScale = new Vector3 (1f, 1f, 1f);    //Volteo del personaje
+            GetComponent<Animator>().SetInteger("State", 0);    //Volteo del personaje
 
         }
 
@@ -41,7 +41,7 @@ public class ControlJugador : MonoBehaviour{
 		{
 			rb.velocity = new Vector2 (- velMovimiento, rb.velocity.y);
 
-                gameObject.transform.localScale = new Vector3(-1f, 1f, 1f);  //Volteo del personaje
+            GetComponent<Animator>().SetInteger("State", 1);  //Volteo del personaje
         }
 	}
 }
