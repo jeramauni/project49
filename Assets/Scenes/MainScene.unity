@@ -745,11 +745,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.38
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.4
+      value: -6.49
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1224,11 +1224,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 651612761}
-  - component: {fileID: 651612760}
   - component: {fileID: 651612759}
   - component: {fileID: 651612763}
   - component: {fileID: 651612758}
   - component: {fileID: 651612762}
+  - component: {fileID: 651612764}
+  - component: {fileID: 651612760}
   m_Layer: 0
   m_Name: SirTabaiba
   m_TagString: Player
@@ -1301,7 +1302,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 57fde36e0f6e07a4cb96c6b1670225ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1363,6 +1364,23 @@ EdgeCollider2D:
   - {x: -1.7563133, y: -1.2666178}
   - {x: 1.4153633, y: -1.2657642}
   - {x: 2.8217773, y: -0.071847916}
+--- !u!95 &651612764
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651612757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ea38c0b660aea948bc664f45269a29f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &712409860
 Prefab:
   m_ObjectHideFlags: 0
@@ -2326,7 +2344,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013898029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -202.8, y: -1, z: 0}
+  m_LocalPosition: {x: -9.2, y: -1.8, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1394883203}
