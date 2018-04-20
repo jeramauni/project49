@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FuncionalidadLógica : MonoBehaviour 
 {
-	private bool enRangoPalanca;
-    private GameObject pal;
+	private bool enRangoPalanca, enRangoCaja;
+    private GameObject pal, caja;
     public GameManager ctrl;
 
     void Start ()
@@ -23,20 +23,26 @@ public class FuncionalidadLógica : MonoBehaviour
 		}
 
         //Caja madera (Machango)
-        if (Input.GetKeyDown(KeyCode.X) && !ctrl.personaje)
+        if (Input.GetKeyDown(KeyCode.X) && !ctrl.personaje && enRangoCaja)
         {
-            
+            caja.GetComponent<CajaMadera>().Golpeada(); //Llama al método que destruye la caja
         }
     }
 
 	void OnTriggerEnter2D (Collider2D coll)
 	{
-		if (coll.gameObject.CompareTag ("palanca")) 
+		if (coll.gameObject.CompareTag ("palanca")) //En rango de una palanca
 		{
 			pal = coll.gameObject;
 			enRangoPalanca = true;
 		}
-	}
+
+        if(coll.gameObject.CompareTag("caja"))    //En rango de una caja
+        {
+            caja = coll.gameObject;
+            enRangoCaja = true;
+        }
+    }
 
 	void OnTriggerExit2D (Collider2D coll)
 	{
@@ -45,5 +51,11 @@ public class FuncionalidadLógica : MonoBehaviour
 			pal = null;
 			enRangoPalanca = false;
 		}
-	}
+
+        if (coll.gameObject.CompareTag("caja"))    //En rango de una caja
+        {
+            caja = coll.gameObject;
+            enRangoCaja = false;
+        }
+    }
 }
