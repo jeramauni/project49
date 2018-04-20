@@ -13,16 +13,18 @@ public class Terror : MonoBehaviour {
 	"Flor de Estrendar" = false
 	 */
 
-	void OnTriggerStay2D (Collider2D coll)
+	void OnTriggerEnter2D (Collider2D coll)
 	{
 		if (coll.gameObject.CompareTag ("Player")) {
-			if (tipo == true) {
-				gm.personaje = false;
-				coll.gameObject.GetComponentInParent<CambiaPersonaje> ().CdP ();
-			} else {
-				gm.personaje = true;
-				coll.gameObject.GetComponentInParent<CambiaPersonaje> ().CdP ();
-			}
+			gm.personaje = tipo;
+			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().CdP ();
+			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().enabled = false;
+		}
+	}
+	void OnTriggerExit2D (Collider2D coll)
+	{
+		if (coll.gameObject.CompareTag ("Player")) {
+			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().enabled = true;	
 		}
 	}
 }
