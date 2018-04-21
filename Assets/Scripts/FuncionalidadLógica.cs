@@ -18,7 +18,6 @@ public class FuncionalidadLógica : MonoBehaviour
 		//Palancas
 		if (Input.GetKeyDown (KeyCode.X) && enRangoPalanca) 
 		{
-            Debug.Log("Click");
             pal.GetComponent<Palanca>().Trigger();
 		}
 
