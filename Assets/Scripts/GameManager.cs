@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
 	void Awake()
 	{
-		personaje = true;
+		personaje = false;
         srt = GameObject.Find ("SirTabaiba");
 		mch = GameObject.Find ("Machango");
 

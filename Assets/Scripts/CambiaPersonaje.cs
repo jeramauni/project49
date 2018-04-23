@@ -5,6 +5,7 @@ using UnityEngine;
 public class CambiaPersonaje : MonoBehaviour
 {
     public GameManager gm;
+	public bool allowed;
 
 	[SerializeField]
 	private GameObject caras;
@@ -16,7 +17,9 @@ public class CambiaPersonaje : MonoBehaviour
 
 	void Start ()
 	{
+		allowed = false;
 		converAnim = caras.GetComponent<Animator> (); //Obtiene el animador de las caras
+		CdP();
 	}
 
 	void Update ()
@@ -31,7 +34,7 @@ public class CambiaPersonaje : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+		if (Input.GetKeyDown(KeyCode.Z) && allowed)
         {
             CdP();
         }
