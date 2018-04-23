@@ -2,8 +2,6 @@
 using System.Collections;
 using UnityEngine.UI;
 
-// attach to UI Text component (with the full text already there)
-
 public class TypeWriter : MonoBehaviour 
 {
 
@@ -25,7 +23,7 @@ public class TypeWriter : MonoBehaviour
 		foreach (char c in story) 
 		{
 			txt.text += c;
-			yield return new WaitForSeconds (0.125f);
+			yield return new WaitForSeconds (0.1f);
 		}
 	}
 

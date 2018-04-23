@@ -41,7 +41,6 @@ public class CambiaPersonaje : MonoBehaviour
     }
    public void CdP()
     {
-
 		if (gm.personaje == false && coolDownTimer == 0)	//Cambia a Sir Tabaiba
         {
             gm.personaje = true;										
