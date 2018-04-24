@@ -37,7 +37,7 @@ public class Ascensor : MonoBehaviour {
 					if (direccion == true) {
 						ascen.velocity = new Vector2 (ascen.velocity.x, -speed);
 					} else {
-						ascen.velocity = new Vector2 (-speed, ascen.velocity.y);
+						ascen.velocity = new Vector2 (speed, ascen.velocity.y);
 					}
 				} else {
 					ascen.velocity = new Vector2 (0f, 0f);
@@ -47,12 +47,13 @@ public class Ascensor : MonoBehaviour {
 					if (direccion == true) {
 						ascen.velocity = new Vector2 (ascen.velocity.x, speed);
 					} else {
-						ascen.velocity = new Vector2 (speed, ascen.velocity.y);
+						ascen.velocity = new Vector2 (-speed, ascen.velocity.y);
 					}
 				} else {
 					ascen.velocity = new Vector2 (0f, 0f);
 				}
 			}
+
 		} else {
 			if (estado.oN == false) {
 				if (ascen.velocity == new Vector2 (0f, 0f)) {
