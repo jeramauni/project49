@@ -44,7 +44,7 @@ public class CambiaPersonaje : MonoBehaviour
 		if (gm.personaje == false && coolDownTimer == 0)	//Cambia a Sir Tabaiba
         {
             gm.personaje = true;										
-			Vector3 pos = new Vector3 (gm.pmch.position.x, gm.pmch.position.y + 1, gm.pmch.position.z); //Instancia en la posición donde se encontrara el otro personaje
+			Vector3 pos = new Vector3 (gm.pmch.position.x, gm.pmch.position.y + 0.45f, 1); //Instancia en la posición donde se encontrara el otro personaje
 			gm.psrt.position = pos;
             gm.srt.SetActive(true);
             gm.mch.SetActive(false);
@@ -55,7 +55,8 @@ public class CambiaPersonaje : MonoBehaviour
 		else if (gm.personaje == true && coolDownTimer == 0)	//Cambia a Machango
         {
             gm.personaje = false;
-			gm.pmch.position = gm.psrt.position;	//Instancia en la posición donde se encontrara el otro personaje
+			Vector3 pos = new Vector3 (gm.psrt.position.x, gm.psrt.position.y - 0.45f, 1);
+			gm.pmch.position = pos;
             gm.mch.SetActive(true);
             gm.srt.SetActive(false);
 			coolDownTimer = coolDown;

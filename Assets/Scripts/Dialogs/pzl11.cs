@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pzl1 : MonoBehaviour {
+public class pzl11 : MonoBehaviour {
 	
 	[SerializeField]
 	GameObject zbutton, fondoTxt, jugador, barrier1, dialogos10;
@@ -23,7 +23,7 @@ public class pzl1 : MonoBehaviour {
 		t3.SetActive (false);
 		t4.SetActive (false);
 		m5.SetActive (false);
-		Invoke("dialog11", 4.5f);
+		Invoke("dialog11", 2.5f);
 	}
 
 	void dialog11 ()
@@ -48,7 +48,7 @@ public class pzl1 : MonoBehaviour {
 		stop = false;
 		m2.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().allowed = false;
-		Invoke ("dialog13", 5);
+		Invoke ("dialog13", 3);
 	}
 
 	void dialog13 ()
@@ -56,14 +56,14 @@ public class pzl1 : MonoBehaviour {
 		Destroy (m2.gameObject);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		t3.SetActive (true);
-		Invoke ("dialog14", 8);
+		Invoke ("dialog14", 6);
 	}
 
 	void dialog14 ()
 	{
 		Destroy (t3.gameObject);
 		t4.SetActive (true);
-		Invoke ("dialog15", 9.5f);
+		Invoke ("dialog15", 6.5f);
 	}
 
 	void dialog15 ()
@@ -71,7 +71,7 @@ public class pzl1 : MonoBehaviour {
 		Destroy (t4.gameObject);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		m5.SetActive (true);
-		Invoke ("terminate", 9.5f);
+		Invoke ("terminate", 6f);
 	}
 
 	void terminate ()						//Acaba con los elementos relacionados con el diálogo actual
