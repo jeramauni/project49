@@ -21,18 +21,13 @@ public class pzl12 : MonoBehaviour {
 			Terminate ();
 	}
 
-	void DisplayTxt () //Muestra el texto
+	void DisplayTxt () //Muestra el texto y el icono de la tecla a pulsar
 	{
 		fondoTxt.SetActive (true);
 		txt1.SetActive (true);
-		Invoke ("ShowBtn", 1);
-	}
-
-	void ShowBtn ()		//Muestra la tecla 
-	{
 		xKey.SetActive (true);
 	}
-
+		
 	void HideAll ()	//Oculta el texto si sale de la zona
 	{
 		xKey.SetActive (false);
