@@ -63,5 +63,6 @@ public class CambiaPersonaje : MonoBehaviour
 
 			converAnim.SetBool ("Character", false);	//Cambia a la cara de Machango
         }
+			
     }
 }
