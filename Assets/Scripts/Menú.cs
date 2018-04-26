@@ -16,4 +16,8 @@ public class Menú : MonoBehaviour {
 	{
 		audio.SetFloat ("Volumen", volumen);
 	}
+	public void VolverAlMenú()
+	{
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex - 1);
+	}
 }
