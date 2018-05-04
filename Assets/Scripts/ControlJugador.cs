@@ -41,7 +41,7 @@ public class ControlJugador : MonoBehaviour{
 		{
 			rb.velocity = new Vector2 (- velMovimiento, rb.velocity.y);
 
-            GetComponent<Animator>().SetInteger("State", 1);  //Volteo del personaje
+			GetComponent<Animator> ().SetInteger ("State", 1);  //Volteo del personaje
         }
 	}
 }
