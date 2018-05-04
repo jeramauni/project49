@@ -8,9 +8,10 @@ public class Menú : MonoBehaviour {
 
 	public AudioMixer audio;
 
-	public void Jugar()
+	void OnTriggerEnter2D (Collider2D coll)
 	{
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		Debug.Log ("asdas");
 	}
 	public void Volumen (float volumen)
 	{
