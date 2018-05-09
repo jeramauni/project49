@@ -27,21 +27,42 @@ public class ControlJugador : MonoBehaviour{
 			rb.velocity = new Vector2 (rb.velocity.x , rb.velocity.y + alturaSalto);
 		}
 
-		//Mover a la derecha ("Flecha derecha")
-		if(((Input.GetKey(KeyCode.RightArrow)) && colisionD.dentro == false) || ((Input.GetKey(KeyCode.RightArrow)) && colisionS.dentro == true))
-		{
-			rb.velocity = new Vector2 (velMovimiento, rb.velocity.y);
-
-            GetComponent<Animator>().SetInteger("State", 0);    //Volteo del personaje
-
+        //Suelta flecha derecha
+        if (Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            GetComponent<Animator>().SetInteger("State", 0);
         }
 
-		//Mover a la izquierda ("Flecha izquierda")
-		if(((Input.GetKey(KeyCode.LeftArrow)) && colisionI.dentro == false) ||((Input.GetKey(KeyCode.LeftArrow)) && colisionS.dentro == true))
-		{
-			rb.velocity = new Vector2 (- velMovimiento, rb.velocity.y);
+        else
+        {
+            //Mover a la derecha ("Flecha derecha")
+            if (((Input.GetKey(KeyCode.RightArrow)) && colisionD.dentro == false) || ((Input.GetKey(KeyCode.RightArrow)) && colisionS.dentro == true))
+            {
+                rb.velocity = new Vector2(velMovimiento, rb.velocity.y);
 
-			GetComponent<Animator> ().SetInteger ("State", 1);  //Volteo del personaje
+                if (GetComponent<Animator>().GetInteger("State") != 1)
+                    GetComponent<Animator>().SetInteger("State", 1);
+            }
         }
-	}
+
+
+        //Suelta flecha izquierda
+        if (Input.GetKeyUp(KeyCode.LeftArrow))
+        {
+            GetComponent<Animator>().SetInteger("State", 3);
+        }
+
+        else
+        {
+            //Mover a la izquierda ("Flecha izquierda")
+            if (((Input.GetKey(KeyCode.LeftArrow)) && colisionI.dentro == false) || ((Input.GetKey(KeyCode.LeftArrow)) && colisionS.dentro == true))
+            {
+                rb.velocity = new Vector2(-velMovimiento, rb.velocity.y);
+
+                if (GetComponent<Animator>().GetInteger("State") != 4)
+                    GetComponent<Animator>().SetInteger("State", 4);
+            }
+        }
+       
+    }
 }
