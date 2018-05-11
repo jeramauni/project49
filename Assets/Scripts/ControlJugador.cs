@@ -19,7 +19,7 @@ public class ControlJugador : MonoBehaviour{
 
     private void Update()
     {
-        GetComponent<Animator>().SetFloat("v", rb.velocity.x);
+        GetComponent<Animator>().SetFloat("velocity", rb.velocity.x);
     }
 
     void FixedUpdate()
