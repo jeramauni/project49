@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 	public GameObject srt, mch;
 	public Transform psrt, pmch;
 
-	void Awake()
+	void Start()
 	{
 		personaje = false;
         srt = GameObject.Find ("SirTabaiba");

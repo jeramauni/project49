@@ -7,7 +7,7 @@ public class MovimientoObjetos : MonoBehaviour {
 	Rigidbody2D bloque;
 	public GameManager gm; 
 
-	void Start () 
+	void Awake () 
 	{
 		bloque = GetComponent<Rigidbody2D> ();
 		gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
