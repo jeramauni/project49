@@ -3421,7 +3421,7 @@ Prefab:
         type: 2}
       propertyPath: activador
       value: 
-      objectReference: {fileID: 1581855608}
+      objectReference: {fileID: 1907046888}
     - target: {fileID: 50360454803818472, guid: 2d37a72df5627384a87c35f84752d2b5,
         type: 2}
       propertyPath: m_BodyType
@@ -8244,7 +8244,7 @@ Prefab:
         type: 2}
       propertyPath: activador
       value: 
-      objectReference: {fileID: 1907046888}
+      objectReference: {fileID: 1581855608}
     - target: {fileID: 50360454803818472, guid: 2d37a72df5627384a87c35f84752d2b5,
         type: 2}
       propertyPath: m_BodyType
@@ -19650,7 +19650,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855995836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9389105, y: -3.4062724, z: 0.1434056}
+  m_LocalPosition: {x: 3.95, y: -3.4062724, z: 0.1434056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750892742}
