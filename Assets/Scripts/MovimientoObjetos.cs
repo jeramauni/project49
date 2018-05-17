@@ -6,7 +6,7 @@ public class MovimientoObjetos : MonoBehaviour {
 
 	Rigidbody2D bloque;
 	public GameManager gm; 
-
+	public bool prueba;
 	void Awake () 
 	{
 		bloque = GetComponent<Rigidbody2D> ();
@@ -17,13 +17,19 @@ public class MovimientoObjetos : MonoBehaviour {
 	{
 
 		transform.rotation = Quaternion.identity;
-		 
-		if (gm.personaje == true)
+		if (prueba == true) {
+			if (gm.personaje == true)
 				bloque.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-		
-		else
-		{
-			bloque.constraints = RigidbodyConstraints2D.None;	
+			else {
+				bloque.constraints = RigidbodyConstraints2D.None;	
+			}
+		} else {
+			if (gm.personaje == true)
+				bloque.mass = 1000;
+			else {
+				bloque.mass = 10;	
+			}
 		}
+
 	}
 }
