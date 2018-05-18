@@ -20,15 +20,12 @@ public class Terror : MonoBehaviour {
 				coll.gameObject.GetComponentInParent<CambiaPersonaje> ().CdP ();
 			}
 			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().enabled = false;
-			Debug.Log (tipo);
 		}
 	}
 	void OnTriggerExit2D (Collider2D coll)
 	{
 		if (coll.gameObject.CompareTag ("Player")) {
 			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().enabled = true;
-			Debug.Log (tipo);
-			//gm.personaje = !gm.personaje;
 		}
 	}
 }

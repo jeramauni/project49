@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212004172610617578}
   - component: {fileID: 61943288213080958}
   - component: {fileID: 95382692801407218}
-  - component: {fileID: 61657001357228222}
   - component: {fileID: 114755166784512002}
   m_Layer: 0
   m_Name: Palanca
@@ -37,38 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1575633963452032}
-  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 7.3614693, y: 0.70071745, z: 0.098017804}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.126137, y: 3.0243645, z: 0.8439684}
+  m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!61 &61657001357228222
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1575633963452032}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.65, y: 4.28}
-    newSize: {x: 3.92, y: 4.43}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.65, y: 4.28}
-  m_EdgeRadius: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61943288213080958
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -81,7 +55,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.6, y: 0}
+  m_Offset: {x: 7.1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -92,7 +66,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.7, y: 6.65}
+  m_Size: {x: 20, y: 15.89}
   m_EdgeRadius: 0
 --- !u!95 &95382692801407218
 Animator:
