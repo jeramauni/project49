@@ -19,7 +19,6 @@ public class incio : MonoBehaviour {
 		t3.SetActive (false);
 		t4.SetActive (false);
 		m5.SetActive (false);
-		Invoke("dialog11", 2.5f);
 	}
 
 

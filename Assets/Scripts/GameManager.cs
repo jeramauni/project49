@@ -10,24 +10,39 @@ public class GameManager : MonoBehaviour
 	public GameObject srt, mch;
 	public Transform psrt, pmch;
 
-	void Start()
-	{
-		personaje = false;
-        srt = GameObject.Find ("SirTabaiba");
-		mch = GameObject.Find ("Machango");
-
-        psrt = srt.transform;
-        pmch = mch.transform;
+    private void Start()
+    {
 
         if (instance == null)
-		{
-			instance = this;
+        {
+            instance = this;
 
-			DontDestroyOnLoad(this.gameObject);
-		}
-		else
-		{
-			Destroy(this.gameObject);
-		}
-	}
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+
+        srt = GameObject.Find("SirTabaiba");
+        psrt = srt.transform;
+        mch = GameObject.Find("Machango");
+        pmch = mch.transform;
+    }
+
+    private void Update()
+    {
+        if(srt == null)
+        {
+            srt = GameObject.Find("SirTabaiba");
+            psrt = srt.transform;
+        }
+
+        if (mch == null)
+        {
+            mch = GameObject.Find("Machango");
+            pmch = mch.transform;
+        }
+    }
+
 }
