@@ -7,15 +7,19 @@ public class MovimientoObjetos : MonoBehaviour {
 	Rigidbody2D bloque;
 	public GameManager gm; 
 	public bool prueba;
-	void Start () 
+
+	void Start() 
 	{
 		bloque = GetComponent<Rigidbody2D> ();
-		gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+		//gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
 	}
 
-	void Update () 
+	void Update() 
 	{
-
+		if (gm == null) {
+			gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+		}
+		Debug.Log (gm.personaje);
 		transform.rotation = Quaternion.identity;
 		if (prueba == true) {
 			if (gm.personaje == true)

@@ -19,7 +19,7 @@ public class CambiaPersonaje : MonoBehaviour
 	{
 		allowed = false;
 		converAnim = caras.GetComponent<Animator> (); //Obtiene el animador de las caras
-		CdP();
+		//CdP();
 	}
 
 	void Update ()
@@ -31,38 +31,29 @@ public class CambiaPersonaje : MonoBehaviour
 			coolDownTimer -= Time.deltaTime;
 
 	}
+		
+	public bool CdP()
+	{
+			if (gm.personaje == false && coolDownTimer == 0) {	//Cambia a Sir Tabaiba
+				gm.personaje = true;										
+				Vector3 pos = new Vector3 (gm.pmch.position.x, gm.pmch.position.y + 0.45f, 1); //Instancia en la posición donde se encontrara el otro personaje
+				gm.psrt.position = pos;
+				gm.srt.SetActive (true);
+				gm.mch.SetActive (false);
+				coolDownTimer = coolDown;
 
-    void FixedUpdate()
-    {
-		if (Input.GetKeyDown(KeyCode.Z) && allowed)
-        {
-            CdP();
-        }
-    }
-   public void CdP()
-    {
-		if (gm.personaje == false && coolDownTimer == 0)	//Cambia a Sir Tabaiba
-        {
-            gm.personaje = true;										
-			Vector3 pos = new Vector3 (gm.pmch.position.x, gm.pmch.position.y + 0.45f, 1); //Instancia en la posición donde se encontrara el otro personaje
-			gm.psrt.position = pos;
-            gm.srt.SetActive(true);
-            gm.mch.SetActive(false);
-			coolDownTimer = coolDown;
+				converAnim.SetBool ("Character", true);	//Cambia a la cara de Tabaiba
+			} else if (gm.personaje == true && coolDownTimer == 0) {	//Cambia a Machango
+				gm.personaje = false;
+				Vector3 pos = new Vector3 (gm.psrt.position.x, gm.psrt.position.y - 0.45f, 1);
+				gm.pmch.position = pos;
+				gm.mch.SetActive (true);
+				gm.srt.SetActive (false);
+				coolDownTimer = coolDown;
 
-			converAnim.SetBool ("Character", true);	//Cambia a la cara de Tabaiba
-        }
-		else if (gm.personaje == true && coolDownTimer == 0)	//Cambia a Machango
-        {
-            gm.personaje = false;
-			Vector3 pos = new Vector3 (gm.psrt.position.x, gm.psrt.position.y - 0.45f, 1);
-			gm.pmch.position = pos;
-            gm.mch.SetActive(true);
-            gm.srt.SetActive(false);
-			coolDownTimer = coolDown;
-
-			converAnim.SetBool ("Character", false);	//Cambia a la cara de Machango
-        }
-			
+				converAnim.SetBool ("Character", false);	//Cambia a la cara de Machango
+			}
+			Debug.Log (gm.personaje);
+		return gm.personaje;
     }
 }

@@ -2027,7 +2027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa9ec9b89ae52b46a84f464530c4eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personaje: 0
+  personaje: 1
   srt: {fileID: 2087568206}
   mch: {fileID: 1825978718}
   psrt: {fileID: 2087568207}

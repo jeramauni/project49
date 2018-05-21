@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 	public static GameManager instance = null;
 
 	public bool personaje;
-	public GameObject srt, mch;
+	public GameObject srt, mch, per;
 	public Transform psrt, pmch;
 
     private void Start()
@@ -21,17 +21,28 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(this.gameObject);
+			Destroy(gameObject);
         }
-
+		per = GameObject.Find ("Jugador");
         srt = GameObject.Find("SirTabaiba");
         psrt = srt.transform;
         mch = GameObject.Find("Machango");
         pmch = mch.transform;
     }
-
+	void FixedUpdate()
+	{
+		if (Input.GetKeyDown(KeyCode.Z) && per.GetComponent<CambiaPersonaje> ().allowed)
+		{
+			personaje = per.GetComponent<CambiaPersonaje> ().CdP ();
+		}
+	}
     private void Update()
     {
+
+		Debug.Log (personaje);
+		if (per == null) {
+			per = GameObject.Find ("Jugador");
+		}
         if(srt == null)
         {
             srt = GameObject.Find("SirTabaiba");
@@ -43,6 +54,7 @@ public class GameManager : MonoBehaviour
             mch = GameObject.Find("Machango");
             pmch = mch.transform;
         }
+	//	personaje = per.GetComponent<CambiaPersonaje> ().gm.personaje;
     }
 
 }

@@ -19,13 +19,21 @@ public class Terror : MonoBehaviour {
 			if (gm.personaje == tipo) {
 				coll.gameObject.GetComponentInParent<CambiaPersonaje> ().CdP ();
 			}
-			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().enabled = false;
+			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().allowed = false;
+		}
+	}
+	void OnTriggerStay2D (Collider2D coll)
+	{
+		if (coll.gameObject.CompareTag ("Player")) {
+			if (gm.personaje == tipo) {
+				coll.gameObject.GetComponentInParent<CambiaPersonaje> ().CdP ();
+			}
 		}
 	}
 	void OnTriggerExit2D (Collider2D coll)
 	{
 		if (coll.gameObject.CompareTag ("Player")) {
-			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().enabled = true;
+			coll.gameObject.GetComponentInParent<CambiaPersonaje> ().allowed = true;
 		}
 	}
 }
