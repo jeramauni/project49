@@ -3047,11 +3047,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4184302495204464, guid: bc18d8789a3d300488051a96b51bff76, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.642
+      value: -4.72
       objectReference: {fileID: 0}
     - target: {fileID: 4184302495204464, guid: bc18d8789a3d300488051a96b51bff76, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -15.79
+      value: -16.09
       objectReference: {fileID: 0}
     - target: {fileID: 4184302495204464, guid: bc18d8789a3d300488051a96b51bff76, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5038,7 +5038,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 445363920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.9, y: 24.4, z: 0}
+  m_LocalPosition: {x: 26.01, y: -6.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 650009114}
@@ -6339,12 +6339,12 @@ Prefab:
     - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
         type: 2}
       propertyPath: m_Offset.x
-      value: 4.68
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
         type: 2}
       propertyPath: m_Size.x
-      value: 12.73
+      value: 17.1
       objectReference: {fileID: 0}
     - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
         type: 2}
@@ -6363,7 +6363,7 @@ Prefab:
     - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
         type: 2}
       propertyPath: m_Offset.y
-      value: -1.84
+      value: -5.03
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -8642,6 +8642,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 27
       objectReference: {fileID: 0}
+    - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 19.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 61943288213080958, guid: bc18d8789a3d300488051a96b51bff76,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -4.84
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bc18d8789a3d300488051a96b51bff76, type: 2}
   m_IsPrefabParent: 0
@@ -9825,7 +9840,7 @@ GameObject:
   - component: {fileID: 801932678}
   m_Layer: 0
   m_Name: ColisionD
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12190,7 +12205,7 @@ GameObject:
   - component: {fileID: 1006276179}
   m_Layer: 0
   m_Name: ColisionS
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13724,7 +13739,7 @@ GameObject:
   - component: {fileID: 1124417035}
   m_Layer: 0
   m_Name: ColisionD
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15382,7 +15397,7 @@ GameObject:
   - component: {fileID: 1251254931}
   m_Layer: 0
   m_Name: ColisionS
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16508,7 +16523,7 @@ GameObject:
   - component: {fileID: 1369309439}
   m_Layer: 0
   m_Name: ColisionI
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18342,7 +18357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1525596682
 Transform:
   m_ObjectHideFlags: 0
@@ -21671,7 +21686,7 @@ GameObject:
   - component: {fileID: 1777211866}
   m_Layer: 0
   m_Name: ColisionI
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
