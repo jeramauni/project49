@@ -31,7 +31,7 @@ public class MovimientoObjetos : MonoBehaviour {
 			if (gm.personaje == true)
 				bloque.mass = 1000;
 			else {
-				bloque.mass = 10;	
+				bloque.mass = 6;	
 			}
 		}
 
