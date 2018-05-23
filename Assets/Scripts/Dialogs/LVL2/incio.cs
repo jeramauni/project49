@@ -19,50 +19,16 @@ public class incio : MonoBehaviour {
 		t3.SetActive (false);
 		t4.SetActive (false);
 		m5.SetActive (false);
+		Invoke ("dialog12", 5f);
 	}
-
-
-	void Update ()
-	{
-		switch (numDialogos) {
-		case 0:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog12", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 1:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog13", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 2:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog14", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 3:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog15", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 4:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("terminate", 0.5f);
-				numDialogos++;
-			}
-			break;
-		}
-	}
+		
 
 	void dialog12 ()								//Métodos que administran la aparición de los textos
 	{
 		Destroy (t1.gameObject);
 		m2.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog13", 3f);
 	}
 
 	void dialog13 ()
@@ -70,12 +36,14 @@ public class incio : MonoBehaviour {
 		Destroy (m2.gameObject);
 		t3.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog14", 6f);
 	}
 
 	void dialog14 ()
 	{
 		Destroy (t3.gameObject);
 		t4.SetActive (true);
+		Invoke ("dialog15", 6f);
 	}
 
 	void dialog15 ()
@@ -83,6 +51,7 @@ public class incio : MonoBehaviour {
 		Destroy (t4.gameObject);
 		m5.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("terminate", 3f);
 	}
 
 	void terminate ()						//Acaba con los elementos relacionados con el diálogo actual

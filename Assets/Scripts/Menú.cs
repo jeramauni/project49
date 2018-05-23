@@ -19,7 +19,7 @@ public class Menú : MonoBehaviour {
 	}
 	public void VolverAlMenú()
 	{
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex - 1);
+		SceneManager.LoadScene ("Menú", LoadSceneMode.Additive);
 	}
 	public void Salir()
 	{
