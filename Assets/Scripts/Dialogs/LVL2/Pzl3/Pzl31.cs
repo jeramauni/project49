@@ -19,14 +19,15 @@ public class Pzl31 : MonoBehaviour {
 	{
 		if (coll.gameObject.CompareTag ("Player")) 
 		{
-			if(!gm.personaje)
-			{
-				jugador.GetComponent<CambiaPersonaje> ().CdP ();
-			}
+			
 			jugador.GetComponent<CambiaPersonaje> ().allowed = false;
 			cajaTxt.SetActive (true);
 			SrT1.SetActive (true);
 			Destroy (this.gameObject.GetComponent<Collider2D> ());
+			if(!gm.personaje)
+			{
+				jugador.GetComponent<CambiaPersonaje> ().CdP ();
+			}
 			Invoke ("Dialogo41", 3);
 		}
 

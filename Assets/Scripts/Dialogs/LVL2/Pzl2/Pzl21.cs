@@ -19,14 +19,15 @@ public class Pzl21 : MonoBehaviour {
 	{
 		if (coll.gameObject.CompareTag ("Player")) 
 		{
-			if(!gm.personaje)
-			{
-				jugador.GetComponent<CambiaPersonaje> ().CdP ();
-			}
+
 			jugador.GetComponent<CambiaPersonaje> ().allowed = false;
 			cajaTxt.SetActive (true);
 			SrT1.SetActive (true);
 			Destroy (this.gameObject.GetComponent<Collider2D> ());
+			if(!gm.personaje)
+			{
+				jugador.GetComponent<CambiaPersonaje> ().CdP ();
+			}
 			Invoke ("Dialogo41", 5);
 		}
 
@@ -38,7 +39,7 @@ public class Pzl21 : MonoBehaviour {
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		Destroy (SrT1);
 		Mch2.SetActive (true);
-		Invoke ("Dialogo42", 6);
+		Invoke ("Dialogo42", 4.5f);
 	}
 
 	void Dialogo42 () 
@@ -46,7 +47,7 @@ public class Pzl21 : MonoBehaviour {
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		Destroy (Mch2);
 		SrT3.SetActive (true);
-		Invoke ("Dialogo43", 8);
+		Invoke ("Dialogo43", 11);
 	}
 
 	void Dialogo43 () 
@@ -61,7 +62,7 @@ public class Pzl21 : MonoBehaviour {
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		Destroy (SrT4);
 		Mch5.SetActive (true);
-		Invoke ("Dialogo45", 8);
+		Invoke ("Dialogo45", 9);
 	}
 
 	void Dialogo45 () 

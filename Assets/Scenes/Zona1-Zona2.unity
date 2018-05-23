@@ -385,7 +385,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<Sir tabaiba le interrumpe>\n\xBFTe tengo que recordar la recompensa?"
+  m_Text: "<Sir tabaiba le interrumpe>\n\xBFTe tengo que recordar que te pago para
+    que cumplas tu deber?"
 --- !u!114 &84487381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +658,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "<Machango r\xEDe levemente>\r\nNo se lo negar\xE9, pero resp\xF3ndame una
-    pregunta\r\n\xBFAlguna vez a visto a un ser querido pasar hambre? \r"
+    pregunta\r.\n\xBFAlguna vez a visto a un ser querido pasar hambre? \r"
 --- !u!114 &328358564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,9 +1102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<Machango maldice a Sir Tabaiba en un tono tan bajo
-
-    que es casi imperceptible>'
+  m_Text: <Machango maldice a Sir Tabaiba en un tono tan bajo que resulta casi imperceptible>
 --- !u!114 &679389425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,7 +1341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1\xA1\xBFC\xD3MO TE ATREVEZ MALDITO PLEBEYO ANALFABETO?!!"
+  m_Text: "\xA1\xA1\xBFC\xD3MO TE ATREVES MALDITO PLEBEYO ANALFABETO?!!"
 --- !u!114 &882498553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1982,7 +1981,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "<Machango apoya una mano en su mazo, lo que provoca que\nSir tabaiba retroceda
-    apoy\xE1ndose en sus codos>\n\xA1\xBFQU\xC9 ME ACABAS DE..."
+    levemente>\n\xA1\xBFQU\xC9 ME ACABAS DE..."
 --- !u!114 &1327656962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2030,6 +2029,7 @@ MonoBehaviour:
   personaje: 1
   srt: {fileID: 2087568206}
   mch: {fileID: 1825978718}
+  per: {fileID: 0}
   psrt: {fileID: 2087568207}
   pmch: {fileID: 1825978719}
 --- !u!4 &1516239600
@@ -2219,7 +2219,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lo supon\xEDa."
+  m_Text: "Lo supon\xEDa..."
 --- !u!114 &1708642660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,9 +2634,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como supon\xEDa solo eres otro plebeyo como cualquier otro.\nDesde que
-    les hablas de ganar 3 o 4 monedas, ya est\xE1n\ndispuestos de dar a su propia
-    hija a una casa adinerada."
+  m_Text: "Como supon\xEDa, solo eres un plebeyo como cualquier otro.\nDesde que les
+    hablas de ganar 3 o 4 monedas, hacen cualquier cosa.."
 --- !u!114 &1945707308
 MonoBehaviour:
   m_ObjectHideFlags: 0
