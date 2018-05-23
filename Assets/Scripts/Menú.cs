@@ -9,8 +9,7 @@ public class Menú : MonoBehaviour {
 	public AudioMixer audio;
 	void OnTriggerEnter2D (Collider2D coll)
 	{
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-		Debug.Log ("asdas");
+		SceneManager.LoadScene (1);
 	}
 	public void Volumen (float volumen)
 	{
@@ -18,8 +17,8 @@ public class Menú : MonoBehaviour {
 	}
 	public void VolverAlMenú()
 	{
-		Destroy (GameObject.Find ("Canvas"));
-		SceneManager.LoadScene ("Menú", LoadSceneMode.Additive);
+		//Destroy (GameObject.Find ("Canvas"));
+		SceneManager.LoadScene (0);
 	}
 	public void Salir()
 	{

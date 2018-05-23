@@ -188,6 +188,6 @@ public class InterludioDialogos : MonoBehaviour {
 		jugador.GetComponent<CambiaPersonaje> ().allowed = true;
 		Destroy (dialogos10.gameObject);
 		Destroy (this.gameObject);
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		SceneManager.LoadScene (3);
 	}
 }

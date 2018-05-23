@@ -9,7 +9,7 @@ public class FinalZonas : MonoBehaviour {
 	{
 		if(coll.gameObject.CompareTag ("Player"))
 		{
-			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+			SceneManager.LoadScene (2);
 		}
 	}
 }
