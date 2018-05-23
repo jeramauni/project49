@@ -7,7 +7,6 @@ using UnityEngine.Audio;
 public class Menú : MonoBehaviour {
 
 	public AudioMixer audio;
-
 	void OnTriggerEnter2D (Collider2D coll)
 	{
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
@@ -19,6 +18,7 @@ public class Menú : MonoBehaviour {
 	}
 	public void VolverAlMenú()
 	{
+		Destroy (GameObject.Find ("Canvas"));
 		SceneManager.LoadScene ("Menú", LoadSceneMode.Additive);
 	}
 	public void Salir()
