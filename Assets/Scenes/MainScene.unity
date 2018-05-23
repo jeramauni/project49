@@ -7737,7 +7737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alturaSalto: 8
-  velMovimiento: 4
+  velMovimiento: 4.25
   izq: {fileID: 1369309437}
   der: {fileID: 1124417033}
   sue: {fileID: 1006276177}
