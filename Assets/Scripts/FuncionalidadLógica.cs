@@ -24,9 +24,16 @@ public class FuncionalidadLógica : MonoBehaviour
         //Caja madera (Machango)
         if (Input.GetKeyDown(KeyCode.X) && !ctrl.personaje && enRangoCaja)
         {
-            caja.GetComponent<CajaMadera>().Golpeada(); //Llama al método que destruye la caja
+           
+			GetComponent<Animator>().SetTrigger("Hit");
+			Invoke ("DestruyeCaja", 0.5f);
         }
     }
+
+	void DestruyeCaja ()
+	{
+		caja.GetComponent<CajaMadera>().Golpeada(); //Llama al método que destruye la caja
+	}
 
 	void OnTriggerEnter2D (Collider2D coll)
 	{
