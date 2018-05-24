@@ -8,7 +8,6 @@ public class incio : MonoBehaviour {
 	GameObject fondoTxt, jugador, barrier1, dialogos10;
 	[SerializeField]
 	GameObject t1, m2, t3, t4, m5;
-	int numDialogos = 0;
 
 	void Start () 
 	{				//Inicializa el primer diálogo y desactiva los sucesores

@@ -9,6 +9,7 @@ public class CambioDeCámara : MonoBehaviour {
 	bool cambioB = true;
 	public bool returnable = true;
 	private bool open = true;
+
 	void OnTriggerEnter2D (Collider2D coll)
 	{
 		if (coll.gameObject.CompareTag ("Player") && open) {
@@ -19,8 +20,6 @@ public class CambioDeCámara : MonoBehaviour {
 				cams [0].SetActive (false);
 				cams [1].SetActive (true);
 				cambioB = false;
-				/*if (returnable == false)
-					open = false;*/
 			}
 			else if (open)
 			{
@@ -32,10 +31,4 @@ public class CambioDeCámara : MonoBehaviour {
 			}
 		}
 	}
-
-
-	/*void Cooldown ()
-	{
-		open = true;
-	}*/
 }
