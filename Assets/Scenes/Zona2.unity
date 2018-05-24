@@ -652,7 +652,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 24099897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -68.3, y: 1.3, z: 0}
+  m_LocalPosition: {x: -89.1, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1510656280}
@@ -2125,6 +2125,7 @@ MonoBehaviour:
   t3: {fileID: 1246651838}
   t4: {fileID: 1288271898}
   m5: {fileID: 1271268314}
+  gm: {fileID: 0}
 --- !u!4 &107533483 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4304803420022484, guid: 052e65e98a91701419b38f2f65cb1915,
@@ -3592,8 +3593,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1\xA1NO PIENSO DEJAR QUE UNA SE\xD1AL DE HONOR CAIGA EN LAS MANOS DE
-    UN NI\xD1O MIMADO!!"
+  m_Text: "\xA1Esa espada me vendr\xEDa mucho mejor a m\xED! Con lo que debe valer
+    podr\xEDa comprarme la casa de mis sue\xF1os."
 --- !u!114 &190678885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6488,8 +6489,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1\xA1SI NO QUIERES QUE LA INUTIL DE TU HIJA MUERA DE HAMBRE!! \xA1\xA1ME
-    DAR\xC1S ESA ESPADA DE RO...."
+  m_Text: "\xA1\xA1Es la espada de mi familia!! \xA1Te pagu\xE9 para que me ayudaras
+    necio!"
 --- !u!114 &413510000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6990,7 +6991,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFHonor?\n\xBFEnserio?"
+  m_Text: "\xBFHonor?\nPor favor..."
 --- !u!114 &439173223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10510,8 +10511,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36692f9fb2c824d4ba736a2f3f612387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zona1: {fileID: 0}
   zona2: {fileID: 0}
-  zonas: 0
+  zona3: {fileID: 0}
+  zonas1: 0
+  zonas2: 0
+  zonas3: 0
   audio: {fileID: 24100000, guid: 88e4eb66c467d234b8ec6d5ec5900dbd, type: 2}
   gm: {fileID: 0}
 --- !u!114 &635180704
@@ -12608,7 +12613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lo has echo...
+  m_Text: Lo has hecho...
 --- !u!114 &754591160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13309,7 +13314,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "... llevar\xE9 a la tumba de su verdadero leg\xEDtimo heredero."
+  m_Text: "No es digno de ella. Llegar\xE9 antes que el a la monta\xF1a."
 --- !u!114 &787165776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13976,8 +13981,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Primero me demuestras que no eres un caballero, segundo que solo entiendes
-    de nobleza, sin pararse a escuchar o estudiar...
+  m_Text: "Me has demostrado que no eres un verdadero caballero, me has enga\xF1ado.
+    Ni siquiera sabes manejar un arma. Y coger esa flor.. "
 --- !u!114 &812429580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14699,8 +14704,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "... m\xE1s haya de tus fronteras, y ahora... la flor... no entiendes de
-    honor y respeto. No mereces la espada de tu abuelo"
+  m_Text: "Adem\xE1s me has menospreciado todo el viaje. No mereces conseguir esa
+    espada. No eres un verdadero caballero."
 --- !u!114 &840960295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15453,7 +15458,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFEnserio te crees cualquier habladur\xEDa?"
+  m_Text: "\xBFEn serio te crees cualquier habladur\xEDa?"
 --- !u!114 &905629643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17929,11 +17934,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -260.26404
+      value: -268
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 112.5
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -18483,7 +18488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lo siento pero no pienso quedarme\naqu\xED sentado por cuentos de ni\xF1os"
+  m_Text: "Lo siento pero no pienso quedarme\naqu\xED sentado por cuentos de ni\xF1os."
 --- !u!114 &1122474662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19190,7 +19195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personaje: 1
+  zona1: 0
   zona2: 0
+  zona3: 0
   srt: {fileID: 24099897}
   mch: {fileID: 549512341}
   per: {fileID: 0}
@@ -20909,11 +20916,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 227.8
+      value: 316
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -539
+      value: -541
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -21289,8 +21296,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xA1\xA1AAAAAAH!!\n<Sir Tabaiba aunque ve como Machango est\xE1 gritando
-    no escucha nada, solo..."
+  m_Text: "\xA1\xA1AAAAAAH!!\n<Sir Tabaiba a pesar de los gritos de Machango, no escucha
+    nada, solo..."
 --- !u!114 &1319341256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26737,7 +26744,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '... puede observar como este levanta su martillo con furia, de un momento
+  m_Text: '... puede observar como este levanta su martillo con furia y de un momento
     a otro todo se vuelve negro>'
 --- !u!114 &1585275859
 MonoBehaviour:
@@ -29887,7 +29894,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Crecen solo donde a muerto un valeroso caballero, est\xE1 por encima de
-    cualquier habladuria del pueblo. Es una cuesti\xF3n de honor"
+    cualquier habladuria del pueblo. Es una cuesti\xF3n de honor."
 --- !u!114 &1796770832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30024,11 +30031,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Se a desmayado...
+  m_Text: 'Se ha desmayado...
 
-    Solo al verme levantar mi arma...
+    Solo con verme levantar mi mazo...
 
-    No puedo dejar que porte la espada, la...'
+    No puedo dejar que se quede la espada.'
 --- !u!114 &1799872309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33523,7 +33530,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lo esperable, no comprendes nada relacionado al honor
+  m_Text: Lo esperable, no comprendes nada relacionado al honor.
 --- !u!114 &2027161806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33762,9 +33769,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'No pienso pasar
 
-    Es una flor de...
-
-    <Sir Tabaiba le interrumpe>'
+    Es una flor de Estrendar.'
 --- !u!114 &2051861102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33860,8 +33865,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bueno, si me lo permites, no realizar\xE9 actos dignos de un simio por
-    los cuentos de hada que se pueda inventar una anciana."
+  m_Text: "Bueno, si me lo permites, no me comportar\xE9 como un si fuera un simio
+    por los cuentos de hada que se pueda inventar una anciana."
 --- !u!114 &2065266073
 MonoBehaviour:
   m_ObjectHideFlags: 0

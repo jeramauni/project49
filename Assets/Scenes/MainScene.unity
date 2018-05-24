@@ -1718,7 +1718,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Esa tabla no parece que aguante mucho peso..
+  m_Text: Esa tabla no parece que pueda aguantar mucho peso..
 --- !u!222 &144898540
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11211,6 +11211,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personaje: 1
+  zona1: 0
+  zona2: 0
+  zona3: 0
   srt: {fileID: 651612757}
   mch: {fileID: 15823441}
   per: {fileID: 0}
@@ -11970,7 +11973,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "J\xC1.. Tu no sabes qui\xE9n soy yo.. Me cri\xE9 a base de leche y \xA1GOFIO
+  m_Text: "J\xC1... Tu no sabes qui\xE9n soy yo... Me cri\xE9 a base de leche y \xA1GOFIO
     CANARIO!"
 --- !u!114 &935362076
 MonoBehaviour:
@@ -19300,6 +19303,7 @@ MonoBehaviour:
   t3: {fileID: 1492730146}
   t4: {fileID: 365567076}
   m5: {fileID: 935362073}
+  gm: {fileID: 0}
 --- !u!1 &1537070451
 GameObject:
   m_ObjectHideFlags: 0
@@ -19709,7 +19713,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36692f9fb2c824d4ba736a2f3f612387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zona1: {fileID: 0}
+  zona2: {fileID: 0}
+  zona3: {fileID: 0}
+  zonas1: 0
+  zonas2: 0
+  zonas3: 0
   audio: {fileID: 24100000, guid: 88e4eb66c467d234b8ec6d5ec5900dbd, type: 2}
+  gm: {fileID: 0}
 --- !u!114 &1548079077
 MonoBehaviour:
   m_ObjectHideFlags: 0

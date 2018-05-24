@@ -55,7 +55,7 @@ public class Pzl31 : MonoBehaviour {
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		Destroy (SrT3);
 		Mch4.SetActive (true);
-		Invoke ("Dialogo44", 8);
+		Invoke ("Dialogo44", 10);
 	}
 
 	void Dialogo44 () 
@@ -63,7 +63,7 @@ public class Pzl31 : MonoBehaviour {
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
 		Destroy (Mch4);
 		SrT5.SetActive (true);
-		Invoke ("Dialogo45", 3);
+		Invoke ("Dialogo45", 4);
 	}
 
 	void Dialogo45 () 

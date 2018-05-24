@@ -45,20 +45,20 @@ public class EventoFinal : MonoBehaviour {
 		Destroy (t1.gameObject);
 		m2.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
-		Invoke ("dialog121", 8f);
+		Invoke ("dialog121", 10);
 	}
 	void dialog121 ()
 	{
 		Destroy (m2.gameObject);
 		m21.SetActive (true);
-		Invoke ("dialog13", 8f);
+		Invoke ("dialog13", 8);
 	}
 	void dialog13 ()
 	{
 		Destroy (m21.gameObject);
 		t3.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
-		Invoke ("dialog14", 7f);
+		Invoke ("dialog14", 7);
 	}
 
 	void dialog14 ()
@@ -66,7 +66,7 @@ public class EventoFinal : MonoBehaviour {
 		Destroy (t3.gameObject);
 		m4.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
-		Invoke ("dialog15", 6f);
+		Invoke ("dialog15", 8f);
 	}
 
 	void dialog15 ()

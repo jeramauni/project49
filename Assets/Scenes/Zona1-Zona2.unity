@@ -216,6 +216,7 @@ MonoBehaviour:
   m9: {fileID: 328358561}
   t10: {fileID: 84216824}
   m11: {fileID: 1708642657}
+  gm: {fileID: 0}
 --- !u!4 &72296834
 Transform:
   m_ObjectHideFlags: 0
@@ -589,6 +590,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dentro: 0
+  personaje: 0
+  piedra: 0
+  piedraG: {fileID: 0}
+  personajeG: {fileID: 0}
 --- !u!1 &328358561
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +663,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "<Machango r\xEDe levemente>\r\nNo se lo negar\xE9, pero resp\xF3ndame una
-    pregunta\r.\n\xBFAlguna vez a visto a un ser querido pasar hambre? \r"
+    pregunta\r.\n\xBFAlguna vez ha visto a un ser querido pasar hambre? \r"
 --- !u!114 &328358564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1631,6 +1636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dentro: 0
+  personaje: 0
+  piedra: 0
+  piedraG: {fileID: 0}
+  personajeG: {fileID: 0}
 --- !u!1 &1059051644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,7 +1789,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Por lo que lo \xFAnico que tienes de caballero\nes esa armadura, \xBFMe
+  m_Text: "Por lo que lo \xFAnico que tienes de caballero\nes esa armadura \xBFMe
     equivoco?"
 --- !u!114 &1153818664
 MonoBehaviour:
@@ -1866,6 +1875,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dentro: 0
+  personaje: 0
+  piedra: 0
+  piedraG: {fileID: 0}
+  personajeG: {fileID: 0}
 --- !u!1001 &1295026771
 Prefab:
   m_ObjectHideFlags: 0
@@ -2027,6 +2040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personaje: 1
+  zona1: 0
+  zona2: 0
+  zona3: 0
   srt: {fileID: 2087568206}
   mch: {fileID: 1825978718}
   per: {fileID: 0}
@@ -2112,6 +2128,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dentro: 0
+  personaje: 0
+  piedra: 0
+  piedraG: {fileID: 0}
+  personajeG: {fileID: 0}
 --- !u!1 &1575063917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,6 +2323,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ctrl: {fileID: 0}
+  palancaOFF: {fileID: 0}
+  palancaON: {fileID: 0}
+  madera: {fileID: 0}
+  source: {fileID: 0}
 --- !u!114 &1825978722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,6 +2590,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dentro: 0
+  personaje: 0
+  piedra: 0
+  piedraG: {fileID: 0}
+  personajeG: {fileID: 0}
 --- !u!1 &1945707305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2766,6 +2794,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dentro: 0
+  personaje: 0
+  piedra: 0
+  piedraG: {fileID: 0}
+  personajeG: {fileID: 0}
 --- !u!1 &2069658904
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +3010,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ctrl: {fileID: 0}
+  palancaOFF: {fileID: 0}
+  palancaON: {fileID: 0}
+  madera: {fileID: 0}
+  source: {fileID: 0}
 --- !u!68 &2087568212
 EdgeCollider2D:
   m_ObjectHideFlags: 0
