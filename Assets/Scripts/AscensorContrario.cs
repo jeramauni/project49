@@ -27,7 +27,6 @@ public class AscensorContrario : MonoBehaviour {
 
 	void Update () 
 	{
-
 			if (estado.oN == false) {
 				if (colisionFin.dentro == false) {
 					if (direccion == true) {

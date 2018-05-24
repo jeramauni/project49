@@ -10,13 +10,10 @@ public class Ascensor : MonoBehaviour {
 	private Palanca estado;
 	private Detección colisionIni, colisionFin;
 	public GameObject ini, fin;
-	private bool continuidad = true;
-	public bool direccion, tipo;
+	public bool direccion;
 	/*
 	direccion = true -> Abajo-Arriba
 	direccion = false -> Derecha-Izquierda
-	tipo = true -> Se queda abajo
-	tipo = false -> Vuelve a la posición inicial
 	*/
 
 	void Start () 
@@ -30,8 +27,6 @@ public class Ascensor : MonoBehaviour {
 
 	void Update () 
 	{
-
-		if (tipo == true) {
 			if (estado.oN == false) {
 				if (colisionFin.dentro == false) {
 					if (direccion == true) {
@@ -40,7 +35,15 @@ public class Ascensor : MonoBehaviour {
 						ascen.velocity = new Vector2 (speed, ascen.velocity.y);
 					}
 				} else {
+				if (colisionFin.personaje == false && colisionFin.piedra == false) {
 					ascen.velocity = new Vector2 (0f, 0f);
+				} else if (colisionFin.personaje == true){
+					GameObject.Find ("Jugador").transform.position = new Vector3 (GameObject.Find ("Jugador").transform.position.x, 
+						(GameObject.Find ("Jugador").transform.position.y + 3), GameObject.Find ("Jugador").transform.position.z);
+				} else if (colisionFin.piedra == true){
+					colisionFin.piedraG.transform.position = new Vector3 (colisionFin.piedraG.transform.position.x, 
+						(colisionFin.piedraG.transform.position.y + 1), colisionFin.piedraG.transform.position.z);
+				}
 				}
 			} else {
 				if (colisionIni.dentro == false) {
@@ -53,27 +56,5 @@ public class Ascensor : MonoBehaviour {
 					ascen.velocity = new Vector2 (0f, 0f);
 				}
 			}
-
-		} else {
-			if (estado.oN == false) {
-				if (ascen.velocity == new Vector2 (0f, 0f)) {
-					estado.enabled = false;
-				}
-				ascen.velocity = new Vector2 (ascen.velocity.x, -speed);
-				if (colisionFin.dentro == true && continuidad == true) {
-					speed = -speed;
-					continuidad = false;
-				}
-				if(ascen.velocity != new Vector2 (0f, 0f)){
-					if (colisionIni.dentro == true) {
-						ascen.velocity = new Vector2 (0f, 0f);
-						estado.enabled = true;
-						estado.oN = true;
-						speed = -speed;
-						continuidad = true;
-					}
-				}
-			}
-		}
 	}
 }
