@@ -10,7 +10,8 @@ public class InterludioDialogos : MonoBehaviour {
 	GameObject fondoTxt, jugador, dialogos10;
 	[SerializeField]
 	GameObject m1, t2, m3, t4, m5, t6, m7, t8, m9, t10, m11;
-
+	[SerializeField]
+	GameManager gm;
 
 	// Use this for initialization
 	void Start () 
@@ -31,6 +32,15 @@ public class InterludioDialogos : MonoBehaviour {
 		m11.SetActive (false);
 		Invoke("dialog12", 2.5f);
 	}
+
+	void Update () 
+	{
+		if (gm == null) {
+			gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+		}
+		gm.zona2 = true;
+	}
+
 	void dialog12 ()								//Métodos que administran la aparición de los textos
 	{
 		Destroy (m1.gameObject);

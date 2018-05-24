@@ -8,7 +8,8 @@ public class pzl11 : MonoBehaviour {
 	GameObject zbutton, fondoTxt, jugador, barrier1, dialogos10;
 	[SerializeField]
 	GameObject t1, m2, t3, t4, m5;
-	 
+	[SerializeField]
+	GameManager gm;
 	private bool stop;
 
 	// Use this for initialization
@@ -25,7 +26,7 @@ public class pzl11 : MonoBehaviour {
 		m5.SetActive (false);
 		Invoke("dialog11", 2.5f);
 	}
-
+		
 	void dialog11 ()
 	{
 		zbutton.SetActive (true);
@@ -34,6 +35,10 @@ public class pzl11 : MonoBehaviour {
 
 	void Update ()
 	{
+		if (gm == null) {
+			gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+		}
+		gm.zona1 = true;
 		if (Input.GetKeyDown (KeyCode.Z) && stop) 	//A partir del momento adecuado si se pulsa z
 		{											//desaparece el txt1 y la barrera invisible
 			Destroy (t1.gameObject);

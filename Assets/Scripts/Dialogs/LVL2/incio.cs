@@ -8,6 +8,8 @@ public class incio : MonoBehaviour {
 	GameObject fondoTxt, jugador, barrier1, dialogos10;
 	[SerializeField]
 	GameObject t1, m2, t3, t4, m5;
+	[SerializeField]
+	GameManager gm;
 
 	void Start () 
 	{				//Inicializa el primer diálogo y desactiva los sucesores
@@ -21,6 +23,13 @@ public class incio : MonoBehaviour {
 		Invoke ("dialog12", 5f);
 	}
 		
+	void Update () 
+	{
+		if (gm == null) {
+			gm = GameObject.Find ("GameManager").GetComponent<GameManager> ();
+		}
+		gm.zona3 = true;
+	}
 
 	void dialog12 ()								//Métodos que administran la aparición de los textos
 	{

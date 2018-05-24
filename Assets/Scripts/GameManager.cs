@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
 	public static GameManager instance = null;
 
-	public bool personaje;
+	public bool personaje, zona1 = false, zona2 = false, zona3 = false;
 	public GameObject srt, mch, per;
 	public Transform psrt, pmch;
 
