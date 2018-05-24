@@ -7,12 +7,13 @@ using UnityEngine;
 public class Detección : MonoBehaviour {
 
 	public bool dentro = false, personaje = false, piedra = false;
-	public GameObject piedraG;
+	public GameObject piedraG, personajeG;
 	void OnCollisionStay2D(Collision2D coll)
 	{
 		dentro = true;
 		if (coll.gameObject.CompareTag ("Player")) {
 			personaje = true;
+			personajeG = coll.gameObject;
 		}
 		if (coll.gameObject.CompareTag ("caja")) {
 			piedra = true;

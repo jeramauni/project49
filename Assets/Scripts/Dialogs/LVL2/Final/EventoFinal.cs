@@ -7,7 +7,7 @@ public class EventoFinal : MonoBehaviour {
 	[SerializeField]
 	GameObject fondoTxt, jugador, barrier1, dialogos10;
 	[SerializeField]
-	GameObject t1, m2, m21, t3, m4, t5, m6, m61, m7, m71, camara;
+	GameObject t1, m2, m21, t3, m4, t5, m6, m61, m7, m71, camara, machangoD, machangoM, srTabaibaD, srTabaibaS;
 	[SerializeField]
 	GameManager gm;
 
@@ -24,7 +24,7 @@ public class EventoFinal : MonoBehaviour {
 		fondoTxt.SetActive (true);
 		barrier1.SetActive (true);
 		camara.SetActive (true);
-		Destroy(GameObject.Find("Camara Nivel 3"));
+		Destroy(GameObject.Find("Camara Nivel 1"));
 			if(!gm.personaje)
 			{
 				jugador.GetComponent<CambiaPersonaje> ().CdP ();
@@ -79,6 +79,8 @@ public class EventoFinal : MonoBehaviour {
 
 	void dialog16 ()
 	{
+		machangoD.SetActive (false);
+		machangoM.SetActive (true);
 		Destroy (t5.gameObject);
 		m6.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
@@ -94,6 +96,10 @@ public class EventoFinal : MonoBehaviour {
 
 	void dialog17 ()
 	{
+		machangoM.SetActive (false);
+		machangoD.SetActive (true);
+		srTabaibaD.SetActive (false);
+		srTabaibaS.SetActive (true);
 		Destroy (m61.gameObject);
 		m7.SetActive (true);
 		Invoke ("dialog171", 8f);

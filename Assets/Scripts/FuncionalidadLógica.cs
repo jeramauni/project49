@@ -7,7 +7,8 @@ public class FuncionalidadLógica : MonoBehaviour
 	private bool enRangoPalanca, enRangoCaja;
     private GameObject pal, caja;
     public GameManager ctrl;
-
+	public AudioClip palancaOFF, palancaON, madera;
+	public AudioSource source;
     void Start ()
 	{
 		enRangoPalanca = false;
@@ -18,6 +19,13 @@ public class FuncionalidadLógica : MonoBehaviour
 		//Palancas
 		if (Input.GetKeyDown (KeyCode.X) && enRangoPalanca) 
 		{
+			if (pal.GetComponent<Palanca> ().oN) {
+				Debug.Log("click");
+				source.PlayOneShot (palancaOFF, 2f);
+			} else {
+				Debug.Log("clack");
+				source.PlayOneShot (palancaON, 2f);
+			}
             pal.GetComponent<Palanca>().Trigger();
 		}
 
@@ -32,6 +40,7 @@ public class FuncionalidadLógica : MonoBehaviour
 
 	void DestruyeCaja ()
 	{
+		source.PlayOneShot (madera, 2f);
 		caja.GetComponent<CajaMadera>().Golpeada(); //Llama al método que destruye la caja
 	}
 
