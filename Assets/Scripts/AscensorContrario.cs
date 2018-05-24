@@ -45,14 +45,11 @@ public class AscensorContrario : MonoBehaviour {
 						ascen.velocity = new Vector2 (speed, ascen.velocity.y);
 					}
 				} else {
-				if (colisionIni.personaje == false && colisionIni.piedra == false) {
+				if (colisionIni.personaje == false) {
 					ascen.velocity = new Vector2 (0f, 0f);
 				} else if (colisionIni.personaje == true && GameObject.Find ("ColisionS").GetComponent<Detección> ().dentro == true){
 					GameObject.Find ("Jugador").transform.position = new Vector3 (GameObject.Find ("Jugador").transform.position.x, 
 						(GameObject.Find ("Jugador").transform.position.y + 3), GameObject.Find ("Jugador").transform.position.z);
-				} else if (colisionIni.piedra == true){
-					colisionFin.piedraG.transform.position = new Vector3 (colisionFin.piedraG.transform.position.x, 
-						(colisionFin.piedraG.transform.position.y + 1), colisionFin.piedraG.transform.position.z);
 				}
 				}
 			}

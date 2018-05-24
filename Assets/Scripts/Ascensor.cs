@@ -35,14 +35,11 @@ public class Ascensor : MonoBehaviour {
 						ascen.velocity = new Vector2 (speed, ascen.velocity.y);
 					}
 				} else {
-				if (colisionFin.personaje == false && colisionFin.piedra == false) {
+				if (colisionFin.personaje == false) {
 					ascen.velocity = new Vector2 (0f, 0f);
 				} else if (colisionFin.personaje == true && GameObject.Find ("ColisionS").GetComponent<Detección> ().dentro == true){
 					GameObject.Find ("Jugador").transform.position = new Vector3 (GameObject.Find ("Jugador").transform.position.x, 
 						(GameObject.Find ("Jugador").transform.position.y + 3), GameObject.Find ("Jugador").transform.position.z);
-				} else if (colisionFin.piedra == true){
-					colisionFin.piedraG.transform.position = new Vector3 (colisionFin.piedraG.transform.position.x, 
-						(colisionFin.piedraG.transform.position.y + 1), colisionFin.piedraG.transform.position.z);
 				}
 				}
 			} else {

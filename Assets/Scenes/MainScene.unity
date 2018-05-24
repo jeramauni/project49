@@ -3377,67 +3377,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4653044384900664, guid: c7b11e5cebae4414090e1f689a3bc5ad,
     type: 2}
   m_PrefabInternal: {fileID: 289051606}
---- !u!1 &289757283
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1107229299672624, guid: e1f5cac1994f9cb4a8100feceb041cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 289757284}
-  - component: {fileID: 289757285}
-  m_Layer: 0
-  m_Name: borde Izq
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &289757284
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4497421539727404, guid: e1f5cac1994f9cb4a8100feceb041cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 289757283}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.93, y: -3.94, z: 0}
-  m_LocalScale: {x: -1.1, y: 1.1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1082729343}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &289757285
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 60487385073087630, guid: e1f5cac1994f9cb4a8100feceb041cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 289757283}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.3344183, y: 0.49837062}
-      - {x: 0.24450183, y: 0.5094274}
-      - {x: 0.26020718, y: -0.46265382}
-      - {x: 0.2772541, y: -0.5223717}
-      - {x: 1.6641564, y: -0.5291811}
 --- !u!1 &290837800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4472,7 +4411,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4486,7 +4425,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.1, y: 13.55}
+  m_Size: {x: 7.5, y: 15.67}
   m_EdgeRadius: 0
 --- !u!4 &380640256 stripped
 Transform:
@@ -9247,7 +9186,11 @@ Prefab:
     - target: {fileID: 212714724675908890, guid: cd03930b35a883043bd99af67b438e6f,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1452489851841690, guid: cd03930b35a883043bd99af67b438e6f, type: 2}
+      propertyPath: m_TagString
+      value: caja
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61490680991093666, guid: cd03930b35a883043bd99af67b438e6f, type: 2}
@@ -16865,7 +16808,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 88e4eb66c467d234b8ec6d5ec5900dbd,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: cbfa5dfa0e44ef447840a2d6456ea1ed, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a66d3a6f6b727a2468021980b0ab8e46, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -22248,7 +22191,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: eae63725060ef7046ac93cb8f3b0a5fb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -24587,67 +24530,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4081479095179758, guid: 36430e48593ce12448dbb29594535dfb,
     type: 2}
   m_PrefabInternal: {fileID: 1928510638}
---- !u!1 &1934897852
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1728353529139404, guid: e1f5cac1994f9cb4a8100feceb041cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1934897853}
-  - component: {fileID: 1934897854}
-  m_Layer: 0
-  m_Name: borde Derch
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1934897853
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4149558531341454, guid: e1f5cac1994f9cb4a8100feceb041cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1934897852}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8199735, y: -3.9399934, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1082729343}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1934897854
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 60733139383531052, guid: e1f5cac1994f9cb4a8100feceb041cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1934897852}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.3344183, y: 0.49837062}
-      - {x: 0.24450183, y: 0.5094274}
-      - {x: 0.26020718, y: -0.46265382}
-      - {x: 0.2772541, y: -0.5223717}
-      - {x: 1.6641564, y: -0.5291811}
 --- !u!1 &1937927351
 GameObject:
   m_ObjectHideFlags: 0
@@ -25030,11 +24912,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.11
+      value: -0.68
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -6.38
+      value: -12.65
       objectReference: {fileID: 0}
     - target: {fileID: 4855775873705900, guid: 387458562a6ecc24cb09af6c838170b1, type: 2}
       propertyPath: m_LocalPosition.z

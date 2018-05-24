@@ -48,7 +48,7 @@ public class ControlJugador : MonoBehaviour{
                 rb.velocity = new Vector2(-velMovimiento, rb.velocity.y);
             }
 
-		if (rb.velocity == new Vector2 (0, 0)) {
+		if (rb.velocity.x == 0) {
 			source.Pause ();
 		}
        
