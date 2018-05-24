@@ -10,13 +10,12 @@ public class InterludioDialogos : MonoBehaviour {
 	GameObject fondoTxt, jugador, dialogos10;
 	[SerializeField]
 	GameObject m1, t2, m3, t4, m5, t6, m7, t8, m9, t10, m11;
-	int numDialogos = 0;
-	private bool stop;
+
 
 	// Use this for initialization
 	void Start () 
 	{
-		stop = false;				//Inicializa el primer diálogo y desactiva los sucesores
+		//Inicializa el primer diálogo y desactiva los sucesores
 		fondoTxt.SetActive (true);
 		m1.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().allowed = false; //No permite cambiar de personaje
@@ -30,92 +29,14 @@ public class InterludioDialogos : MonoBehaviour {
 		m9.SetActive (false);
 		t10.SetActive (false);
 		m11.SetActive (false);
-		Invoke("dialog11", 2.5f);
+		Invoke("dialog12", 2.5f);
 	}
-
-	void dialog11 ()
-	{
-		stop = true;
-	}
-
-	void Update ()
-	{
-		switch (numDialogos) {
-		case 0:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog12", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 1:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog13", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 2:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog14", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 3:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog15", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 4:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog16", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 5:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog17", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 6:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog18", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 7:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog19", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 8:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog20", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 9:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("dialog21", 0.5f);
-				numDialogos++;
-			}
-			break;
-		case 10:
-			if (Input.GetKeyDown (KeyCode.Z)) {
-				Invoke ("terminate", 0.5f);
-			}
-			break;
-		default:
-			break;
-		}
-	}
-
 	void dialog12 ()								//Métodos que administran la aparición de los textos
 	{
 		Destroy (m1.gameObject);
 		t2.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog13", 6f);
 	}
 
 	void dialog13 ()
@@ -123,6 +44,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (t2.gameObject);
 		m3.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog14", 6f);
 	}
 
 	void dialog14 ()
@@ -130,6 +52,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (m3.gameObject);
 		t4.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog15", 6f);
 	}
 
 	void dialog15 ()
@@ -137,6 +60,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (t4.gameObject);
 		m5.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog16", 10f);
 	}
 
 	void dialog16 ()
@@ -144,6 +68,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (m5.gameObject);
 		t6.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog17", 8f);
 	}
 
 	void dialog17 ()
@@ -151,6 +76,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (t6.gameObject);
 		m7.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog18", 6f);
 	}
 
 	void dialog18 ()
@@ -158,6 +84,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (m7.gameObject);
 		t8.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog19", 10f);
 	}
 
 	void dialog19 ()
@@ -165,6 +92,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (t8.gameObject);
 		m9.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog20", 10f);
 	}
 
 	void dialog20 ()
@@ -172,6 +100,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (m9.gameObject);
 		t10.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("dialog21", 6f);
 	}
 
 	void dialog21 ()
@@ -179,6 +108,7 @@ public class InterludioDialogos : MonoBehaviour {
 		Destroy (t10.gameObject);
 		m11.SetActive (true);
 		jugador.GetComponent<CambiaPersonaje> ().CdP ();
+		Invoke ("terminate", 3f);
 	}
 		
 
