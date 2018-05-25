@@ -2402,7 +2402,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Partamos.
+  m_Text: Partamos. . .
 --- !u!222 &557811176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3645,7 +3645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Se han contado grandes leyendas sobre el lugar.
+  m_Text: Se han contado grandes historias sobre el lugar.
 --- !u!222 &865241409
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3731,7 +3731,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Me enorgulleze ser parte de algo tan grande como la subida a la monta\xF1a
+  m_Text: "Me enorgullece ser parte de algo tan grande como la subida a la monta\xF1a
     de Rindgar."
 --- !u!222 &866597483
 CanvasRenderer:
@@ -4347,7 +4347,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lo entiendo, llevar un familia no debe ser trabajo f\xE1cil."
+  m_Text: "Lo entiendo, llevar un familia no debe ser tarea f\xE1cil."
 --- !u!222 &1015824468
 CanvasRenderer:
   m_ObjectHideFlags: 0
