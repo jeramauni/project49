@@ -5,7 +5,7 @@ using UnityEngine;
 public class EventoFinal : MonoBehaviour {
 
 	[SerializeField]
-	GameObject fondoTxt, jugador, barrier1, dialogos10;
+	GameObject fondoTxt, jugador, barrier1, dialogos10, comic;
 	[SerializeField]
 	GameObject t1, m2, m21, t3, m4, t5, m6, m61, m7, m71, camara, machangoD, machangoM, srTabaibaD, srTabaibaS;
 	[SerializeField]
@@ -115,7 +115,7 @@ public class EventoFinal : MonoBehaviour {
 	void terminate ()						//Acaba con los elementos relacionados con el diálogo actual
 	{
 		fondoTxt.SetActive (false);
-		jugador.GetComponent<CambiaPersonaje> ().allowed = true;
+		comic.SetActive (true);
 		Destroy (dialogos10.gameObject);
 		Destroy (this.gameObject);
 	}
