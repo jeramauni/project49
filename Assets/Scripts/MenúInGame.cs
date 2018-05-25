@@ -9,11 +9,15 @@ public class MenúInGame : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-			if (gm.personaje == true) {
-				menú (sirT);
-			} else {
-				menú (machango);
-			}
+			Personaje ();
+		}
+	}
+	public void Personaje ()
+	{
+		if (gm.personaje == true) {
+			menú (sirT);
+		} else {
+			menú (machango);
 		}
 	}
 	void menú ( Transform personaje)
